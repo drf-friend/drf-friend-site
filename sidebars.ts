@@ -45,6 +45,11 @@ const sidebars: SidebarsConfig = {
           type: "doc",
           id: "basic/pagination",
           label: "Pagination",
+        },
+        {
+          type: "doc",
+          id: "basic/serializers",
+          label: "Serializers",
         }
       ]
     },

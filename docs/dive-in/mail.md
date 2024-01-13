@@ -45,7 +45,7 @@ MAIL_PASSWORD=""
 MAIL_FROM_ADDRESS=""
 ```
 
-## usage
+## direct mail
 ```python
 from drf_friend.mailer.send_mail import SendMail
 
@@ -58,6 +58,24 @@ mail.from_email("sender@example.com")\
     .template(template_name='register_user',context=context )\
     .send()
 ```
+
+
+## queue mail
+```python
+from drf_friend.mailer.send_mail import SendMailQueue
+
+context = {'recipient_name': 'mostafa'}
+
+mail = SendMailQueue()
+mail.from_email("sender@example.com")\
+    .to(["recipient@example.com"])\
+    .subject("Subject")\
+    .template(template_name='register_user',context=context )\
+    .delay(20) # this is optional (default delay is 10s)
+    .send()
+```
+
+* `.delay(seconds)`
 
 
 ## templates

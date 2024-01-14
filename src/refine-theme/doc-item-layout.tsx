@@ -80,7 +80,11 @@ export const DocItemLayout = ({ children }) => {
                     {docTOC.tutorialTOC}
                 </div>
             ) : (
-                    <div>
+                    <div
+                    className={clsx(
+                        "w-3/12",  
+                    )}
+                    >
                         <DocTOC />
                 </div>
             )}

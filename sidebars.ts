@@ -17,6 +17,7 @@ const sidebars: SidebarsConfig = {
   // But you can create a sidebar manually
   
   tutorialSidebar: [
+    'index',
     {
       type: "doc",
       id: "setup/index",
@@ -25,6 +26,13 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Basic',
+      collapsible: false,
+      collapsed: true,
+      link: {
+        type: "generated-index",
+        title: "Basic",
+        slug: "/basic",
+      },
       items: [
         {
           type: "doc",
@@ -56,6 +64,13 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Dive in',
+      collapsible: false,
+      collapsed: true,
+      link: {
+        type: "generated-index",
+        title: "Dive In",
+        slug: "/dive-in",
+      },
       items: [
         {
           type: "doc",

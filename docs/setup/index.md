@@ -36,6 +36,13 @@ pip install drf-friend=0.0.16
 
 ## configuration
 
+### init
+
+```python title="{project}/__init__.py"
+from drf_friend.core import initialize
+initialize()
+```
+
 ### settings
 
 ```python title="{project}/settings.py"
@@ -61,19 +68,9 @@ REST_FRAMEWORK = {
    ),
 }
 
-# Modules app
-INSTALLED_APPS += bind_modules_app()
-
 # The message broker (you can use RabbitMQ, Redis or others)
 CELERY_BROKER_URL = os.getenv('CELERY_BROKER')
 
-```
-
-### url
-
-```python title="{project}/urls.py"
-from drf_friend.core import bind_modules_urls
-urlpatterns += bind_modules_urls()
 ```
 
 ## directory tree

@@ -99,6 +99,11 @@ const sidebars: SidebarsConfig = {
           type: "doc",
           id: "raw-query/index",
           label: "sql query",
+        },
+        {
+          type: "doc",
+          id: "raw-query/serializers",
+          label: "serializers",
         }
       ]
     }

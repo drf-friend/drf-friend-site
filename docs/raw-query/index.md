@@ -27,3 +27,18 @@ class UserViewset(ViewSet):
             )
         return Response(output)
 ```
+
+## serializer
+
+you can add serializer with your raw query 
+
+```python title="modules/{module_name}/views.py
+import modules.{module_name}.serializers import UserSerializer
+output = raw_query_collection(
+              request=request,
+              results=results,
+              wrap='users', # { wrap_name: []/{}}
+              type='all', # paginate | single | all
+              serializer_class=UserSerializer
+            )
+```

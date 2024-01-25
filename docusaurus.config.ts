@@ -94,6 +94,10 @@ const config: Config = {
           label: 'GitHub',
           position: 'right',
         },
+        {
+          type: 'search',
+          position: 'right',
+        },
       ],
     },
     footer: {
@@ -130,6 +134,12 @@ const config: Config = {
         },
       ],
     },
+    algolia: {
+      appId: "PKSPIWGSD9",
+      apiKey: "f6b03df3b6ec9ff78efa9fd245025a40",
+      indexName: "drf-friend-code4mk",
+      contextualSearch: true,
+  },
   } satisfies Preset.ThemeConfig,
 };
 

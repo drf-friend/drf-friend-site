@@ -32,8 +32,8 @@ export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`Simplify Django REST API development effortlessly with DRF-Friend.`}
+      description="drf-friend is a collection of utilities and enhancements for Django Rest Framework (DRF), aiming to simplify and streamline the process of building RESTful APIs. It provides convenience functions, tools, and patterns to help developers write clean, efficient, and maintainable code when working with DRF">
       <HomepageHeader />
       <main>
         

@@ -4,44 +4,34 @@ description: Easily Setup scheduler
 keywords: [django_schedule, drf_schedule, celery]
 ---
 
-
-## friend_scheduler.py
-
-```python title="{project}/friend_scheduler.py"
-from drf_friend.scheduler.schedule import Schedule
-from modules.user.tasks import my_task
-
-schedules = [
-  Schedule().task(my_task).name('my-task-one').everyFiveMinutes()
-  # your schedule add here
-]
-```
-
 ## celery.py
 
 ```python title="{project}/celery.py"
-from __future__ import absolute_import, unicode_literals
-import os
-from drf_friend.celery import load_celery
-from drf_friend.scheduler.schedule import bind_beat_schedule
-from .friend_scheduler import schedules
+from drf_friend.celery import configure_celery
 
-# Set the default Django settings module for the 'celery' program.
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'core.settings')
-
-app = load_celery('core', bind_beat_schedule(schedules))
+# Call configure_celery to set up the Celery app
+celery_app = configure_celery('project')
 
 if __name__ == '__main__':
-    app.start()
+    celery_app.start()
 ```
 
-:::note[replace `core` with your project name]
+:::note[replace `project` with your project name]
 .
 ```python
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'core.settings')
-app = load_celery('core', bind_beat_schedule(schedules))
-```
+celery_app = configure_celery('project')
 :::
+
+## scheduler.py 
+
+```python title="{project}/friend_config/scheduler.py"
+from drf_friend.scheduler.schedule import Schedule
+from modules.{module_name}.tasks import my_task
+
+schedules = [
+  Schedule().task(my_task).name('my-task-one').everyFiveMinutes()
+]
+```
 
 ## Interval Scheduling
 Configure tasks to run at specific intervals using various schedule frequencies, expanding beyond the examples provided.

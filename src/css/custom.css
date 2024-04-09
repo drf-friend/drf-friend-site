@@ -842,6 +842,7 @@
  #__docusaurus .theme-doc-sidebar-menu.menu__list .menu__link--active {
      color: #1890ff;
      position: relative;
+     background: #f3f4f6;
  }
  
  #__docusaurus
@@ -852,7 +853,7 @@
  }
  
  #__docusaurus .theme-doc-sidebar-menu.menu__list .menu__link--active::before {
-     content: "" !important;
+     /* content: "" !important;
      pointer-events: none;
      position: absolute !important;
      display: block !important;
@@ -861,7 +862,7 @@
      width: 4px;
      height: 4px;
      border-radius: 4px;
-     background-color: #1890ff;
+     background-color: #1890ff; */
  }
  
  #__docusaurus .theme-doc-sidebar-menu.menu__list .menu__link--active::after {
@@ -872,6 +873,11 @@
  #__docusaurus .theme-doc-sidebar-menu.menu__list .menu__link {
      padding-left: 22px;
  }
+
+ #__docusaurus .theme-doc-sidebar-menu.menu__list .menu__link:hover {
+    background: #f3f4f6;
+ }
+ 
  
  /* #__docusaurus .navbar__item.dropdown.dropdown--hoverable.dropdown--right {
      @apply p-0;

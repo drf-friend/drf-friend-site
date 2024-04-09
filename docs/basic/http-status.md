@@ -7,8 +7,8 @@ The status module provides a set of predefined HTTP status codes. These codes, a
 
 ```python title="modules/{module_name}/views.py"
 from modules.user.forms import AddUserForm
-from modules.common.drf_dto import drf_dto
-from modules.common.drf_core import Response, ViewSet, status
+from drf_friend.drf_dto import drf_dto
+from drf_friend.drf_core import Response, ViewSet, status
 
 class UserViewset(ViewSet):
   

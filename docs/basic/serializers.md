@@ -24,7 +24,7 @@ You can specify specific fields in the `Meta class` to include only the desired 
 
 ```python
 class Meta:
-  fields = ['field_1', 'field2']
+  fields = ['field_name', 'field_name']
 ```
 
 ### modify field data

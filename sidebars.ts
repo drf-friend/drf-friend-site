@@ -46,8 +46,8 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: "doc",
-          id: "basic/dto",
-          label: "Form Validation - dto",
+          id: "basic/form-validation",
+          label: "Form Validation",
         },
         {
           type: "doc",

@@ -1,6 +1,6 @@
 ---
-title: dto - form validation
-description: Django form validation - dto
+title: Form Validation
+description: Django form validation
 ---
 
 ## view

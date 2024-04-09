@@ -205,7 +205,7 @@ table.content a {
 ```
 
 :::info
-just add   `<link rel="stylesheet" href="css/sample_mail.`
+just add `<link rel="stylesheet" href="css/sample_mail.css">`
 
 drf automatic convert that inline css
 :::

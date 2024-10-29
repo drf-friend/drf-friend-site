@@ -3,14 +3,14 @@ title: Routing
 description: Router aka ulrls setup
 ---
 
-To set up routing for URLs in your Django application, you can use the `Router` class provided by the `drf_friend.router` module. Below is an example of how to configure routing using the `Router` class.
+To set up routing for URLs in your Django application, you can use the `Router` class provided by the `django_petra.router` module. Below is an example of how to configure routing using the `Router` class.
 
 ## Router
 
 ```python title="moduels/{module_name}/urls.py"
 from django.urls import path 
 from modules.user.views import UserViewset
-from drf_friend.router import Router, Route
+from django_petra.router import Router, Route
 
 routes = [
     Router.get('get/', UserViewset.get_users),

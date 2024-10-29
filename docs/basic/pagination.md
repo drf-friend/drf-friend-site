@@ -11,9 +11,9 @@ Implement pagination on your project with `paginate` method.
 
 ```python
 from modules.user.models import User
-from drf_friend.paginate import paginate
+from django_petra.paginate import paginate
 from modules.user.serializer import UserSerializer
-from drf_friend.drf_core import Response, ViewSet, status
+from django_petra.petra_core import Response, ViewSet, status
 
 class UserViewset(ViewSet):
   def get_users(self, request):

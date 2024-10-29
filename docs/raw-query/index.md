@@ -2,8 +2,8 @@
 # Raw query
 
 ```python title="modules/{module_name}/views.py"
-from drf_friend.drf_core import Response, ViewSet
-from drf_friend.raw_query.helpers import (
+from django_petra.petra_core import Response, ViewSet
+from django_petra.raw_query.helpers import (
   fetch_all_to_dictionary,
   load_sql,
   raw_query_collection

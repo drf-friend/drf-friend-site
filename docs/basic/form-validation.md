@@ -8,12 +8,12 @@ description: Django form validation
 ```python title="modules/{module_name}/views.py"
 from rest_framework import status
 from modules.user.forms import AddUserForm
-from drf_friend.drf_dto import drf_dto
-from drf_friend.drf_core import Response, ViewSet
+from django_petra.petra_dto import petra_dto
+from django_petra.petra_core import Response, ViewSet
 
 class UserViewset(ViewSet):
   
-  @drf_dto(form_class=AddUserForm)
+  @petra_dto(form_class=AddUserForm)
   def add_user(self, request, form):
         # Process valid data
         name = form.cleaned_data['name']

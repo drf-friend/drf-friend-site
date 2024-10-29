@@ -1,7 +1,7 @@
 ---
-title: Setup drf-friend
-description: Setup drf friend with django
-keywords: [django_mail, mail, drf_mail]
+title: Setup Django Petra
+description: Setup django petra
+keywords: [django_petra, petra, django]
 ---
 
 ## installation
@@ -17,21 +17,21 @@ pipenv shell
 3. Install drf-friend
 
 ```shell
-pipenv install drf-friend
+pipenv install django-petra
 # install specific version
-pipenv install drf-friend=0.0.16
+pipenv install django-petra=0.0.1
 ```
 
 ### Install using pip
 
 1. Open a terminal and navigate to your project directory.
 2. create virtual env and activate that
-3. Install drf-friend
+3. Install django-petra
 
 ```bash
-pip install drf-friend
+pip install django-petra
 # install specific version
-pip install drf-friend=0.0.16
+pip install django-petra=0.0.1
 ```
 
 ## configuration
@@ -39,7 +39,7 @@ pip install drf-friend=0.0.16
 ### init
 
 ```python title="{project}/__init__.py"
-from drf_friend.core import initialize
+from django_petra.core import initialize
 initialize()
 ```
 
@@ -47,7 +47,7 @@ initialize()
 
 ```python title="{project}/settings.py"
 #------------
-# DRF_FRIEND
+# Django Petra
 #------------
 
 REST_FRAMEWORK = {
@@ -75,8 +75,8 @@ CELERY_BROKER_URL = os.getenv('CELERY_BROKER')
 
 ## directory tree
 ```bash
-drf-friend-demo/
-├── drf_demo (#project)
+django-petra-demo/
+├── django_petra_demo (#project)
 │   ├── __init__.py
 │   ├── asgi.py
 │   ├── celery.py

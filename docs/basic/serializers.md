@@ -7,8 +7,7 @@ description: Explore the process of serializing response data using serializers
 
 ```python title="moduels/{module_name}/serializers.py"
 from .models import User
-from drf_friend.drf_core import ModelSerializer
-from drf_friend.drf_core import serializers
+from django_petra.petra_core import ModelSerializer, serializers
 
 class UserSerializer(ModelSerializer):
     # assign field and type casting
@@ -49,10 +48,10 @@ class UserSerializer(ModelSerializer):
 
 ### exclude fields
 
-You can exclude specific fields from the serialized representation using the exclude_fields helper function from `drf_friend.raw_query.helpers`:
+You can exclude specific fields from the serialized representation using the exclude_fields helper function from `django_petra.raw_query.helpers`:
 
 ```python
-from drf_friend.raw_query.helpers import exclude_fields
+from django_petra.raw_query.helpers import exclude_fields
 
 def to_representation(self, instance):
     # Modify the representation of the object
@@ -65,7 +64,7 @@ def to_representation(self, instance):
 ### fields
 
 ```python
-from drf_friend.drf_core import serializers
+from django_petra.petra_core import serializers
 
 # serializers.{fieldType}
 name = serializers.CharField()

@@ -8,7 +8,7 @@ The `RawQuerySerializer` provides a flexible approach to handle raw queries in D
 ### All Fields
 
 ```python title="modules/{module_name}/serializers.py"
-from drf_friend.raw_query.serializer import RawQuerySerializer
+from django_petra.raw_query.serializer import RawQuerySerializer
 
 class UserSerializer(RawQuerySerializer):
     class Meta:
@@ -21,7 +21,7 @@ This configuration returns all fields from the serialized data.
 ### Specific Fields
 
 ```python title="modules/{module_name}/serializers.py
-from drf_friend.raw_query.serializer import RawQuerySerializer
+from django_petra.raw_query.serializer import RawQuerySerializer
 
 class UserSerializer(RawQuerySerializer):
     class Meta:
@@ -34,7 +34,7 @@ This configuration returns only the specified fields - `id`, `name`, and `email`
 ### Excluding Fields
 
 ```python title="modules/{module_name}/serializers.py
-from drf_friend.raw_query.serializer import RawQuerySerializer
+from django_petra.raw_query.serializer import RawQuerySerializer
 
 class UserSerializer(RawQuerySerializer):
     class Meta:
@@ -51,7 +51,7 @@ it will returns all data except the `password`
 you can update fields with `update_fields` method
 
 ```python title="modules/{module_name}/serializers.py
-from drf_friend.raw_query.serializer import RawQuerySerializer
+from django_petra.raw_query.serializer import RawQuerySerializer
 
 class UserSerializer(RawQuerySerializer):
     class Meta:
@@ -71,7 +71,7 @@ The update_fields method allows you to modify the values of specific fields duri
 you can add new field
 
 ```python title="modules/{module_name}/serializers.py
-from drf_friend.raw_query.serializer import RawQuerySerializer
+from django_petra.raw_query.serializer import RawQuerySerializer
 
 class RawUserSerializer(RawQuerySerializer):
     
@@ -89,7 +89,7 @@ class RawUserSerializer(RawQuerySerializer):
 ### Relation
 
 ```python title="modules/{module_name}/serializers.py"
-from drf_friend.raw_query.serializer import RawQuerySerializer
+from django_petra.raw_query.serializer import RawQuerySerializer
 
 class UserSubjectsSerializer(RawQuerySerializer):
   class Meta:
@@ -116,8 +116,8 @@ The bind_relations method allows you to include related data in the serialized o
 ## implement views
 
 ```python title="modules/{module_name}/views.py"
-from drf_friend.drf_core import Response, ViewSet
-from drf_friend.raw_query.helpers import (
+from django_petra.petra_core import Response, ViewSet
+from django_petra.raw_query.helpers import (
   fetch_all_to_dictionary,
   load_sql,
   raw_query_collection

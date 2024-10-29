@@ -47,7 +47,7 @@ MAIL_FROM_ADDRESS=""
 
 ## direct mail
 ```python
-from drf_friend.mailer.send_mail import SendMail
+from django_petra.mailer.send_mail import SendMail
 
 context = {'recipient_name': 'mostafa'}
 
@@ -62,7 +62,7 @@ mail.from_email("sender@example.com")\
 
 ## queue mail
 ```python
-from drf_friend.mailer.send_mail import SendMailQueue
+from django_petra.mailer.send_mail import SendMailQueue
 
 context = {'recipient_name': 'mostafa'}
 

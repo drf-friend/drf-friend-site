@@ -1,6 +1,6 @@
 ---
 title: overview
-description: Django form validation - dto
+description: Django Petra
 ---
 
-# drf friend
+# Django Petra

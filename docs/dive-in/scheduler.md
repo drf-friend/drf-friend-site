@@ -7,7 +7,7 @@ keywords: [django_schedule, drf_schedule, celery]
 ## celery.py
 
 ```python title="{project}/celery.py"
-from drf_friend.celery import configure_celery
+from django_petra.celery import configure_celery
 
 # Call configure_celery to set up the Celery app
 celery_app = configure_celery('project')
@@ -25,7 +25,7 @@ celery_app = configure_celery('project')
 ## scheduler.py 
 
 ```python title="{project}/friend_config/scheduler.py"
-from drf_friend.scheduler.schedule import Schedule
+from django_petra.scheduler.schedule import Schedule
 from modules.{module_name}.tasks import my_task
 
 schedules = [

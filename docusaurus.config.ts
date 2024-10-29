@@ -3,8 +3,8 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'DRF FRIEND',
-  tagline: 'drf friend',
+  title: 'Django Petra',
+  tagline: 'django petra',
   favicon: 'https://1394606196-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FKRlUBxf5Oga6lWXzGdEv%2Fuploads%2FiJKpLfVhsZDDvClcDlvm%2Fdrf-friend-logo.svg?alt=media&token=d6d19e29-fe8e-4640-a4ef-5dae210c1975',
 
   // Set the production url of your site here
@@ -76,7 +76,7 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'drf-friend',
+      title: 'django-petra',
       logo: {
         alt: 'My Site Logo',
         src: 'https://1394606196-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FKRlUBxf5Oga6lWXzGdEv%2Fuploads%2FiJKpLfVhsZDDvClcDlvm%2Fdrf-friend-logo.svg?alt=media&token=d6d19e29-fe8e-4640-a4ef-5dae210c1975',
@@ -90,7 +90,7 @@ const config: Config = {
         },
         
         {
-          href: 'https://github.com/code4mk/drf-friend',
+          href: 'https://github.com/code4mk/django-petra',
           label: 'GitHub',
           position: 'right',
         },
